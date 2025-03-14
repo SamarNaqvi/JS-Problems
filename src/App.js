@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Checkbox } from "./CheckBox";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Checkbox label={"Parent"} />
+      <div className="customMargin">
+        <Checkbox label={"Parent1"} parent="Parent" />
+        <div className="customMargin">
+          <Checkbox label={"Child1"} parent={"Parent_Parent1"} />
+          <Checkbox label={"Child2"} parent={"Parent_Parent1"} />
+          <Checkbox label={"Child3"} parent={"Parent_Parent1"} />
+        </div>
+        <Checkbox label={"Parent2"} parent="Parent" />
+        <div className="customMargin">
+          <Checkbox label={"Child1"} parent={"Parent_Parent2"} />
+          <Checkbox label={"Child2"} parent={"Parent_Parent2"} />
+          <Checkbox label={"Child3"} parent={"Parent_Parent2"} />
+        </div>
+      </div>
+    </>
   );
 }
 
