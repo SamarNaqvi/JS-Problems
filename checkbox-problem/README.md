@@ -19,5 +19,3 @@ For example, if we have a structure like:
   - Item 2.2
 
 Checking "Category 1" should automatically check "Item 1.1" and "Item 1.2". Similarly, if both "Item 1.1" and "Item 1.2" are checked, "Category 1" should be checked. If "Item 1.1" is unchecked, "Category 1" should also become unchecked.
-
-The current implementation uses DOM manipulation to handle these relationships, but it has bugs and doesn't integrate well with React's state management approach.
