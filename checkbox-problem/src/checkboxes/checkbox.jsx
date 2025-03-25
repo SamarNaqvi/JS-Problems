@@ -1,7 +1,7 @@
 import React from "react";
 import { setChildLogic, setParentLogic } from "./util";
 
-export const Checkbox = ({ parent = "", label, checked = false }) => {
+export const CheckboxComp = ({ parent = "", label, checked = false }) => {
   const updatedId = parent ? `${parent}_${label}` : label;
 
   const handleChange = (e) => {
@@ -25,3 +25,5 @@ export const Checkbox = ({ parent = "", label, checked = false }) => {
     </div>
   );
 };
+
+
