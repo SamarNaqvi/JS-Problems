@@ -1,10 +1,10 @@
-import VSCodeHierarcy from './VS-Code-hierarcy';
+import VirtualizedListOptimized from './List-Virtualisation/optimized';
 
 function App() {
 
   return (
     <div className='w-full h-full flex'>
-    <VSCodeHierarcy/>
+    <VirtualizedListOptimized/>
   
     </div>
   )
